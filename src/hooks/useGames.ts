@@ -1,15 +1,23 @@
 import apiClient from "@/services/ApiClient";
 import { useQuery } from '@tanstack/react-query';
 
+interface Platform{
+    id:number
+    name:string
+    slug:string
+}
+
 export interface Game {
     id: number
     name: string
     background_image:string
+    parent_platforms:{platform:Platform}[]
 }
 
 interface FetchGameResponse {
     count: number,
     results: Game[]
+
 }
 
 const fetchGames = async ():Promise<Game[]> => {
