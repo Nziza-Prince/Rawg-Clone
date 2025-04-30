@@ -1,5 +1,5 @@
 import Logo from '../assets/Logo/logo.webp'
-import DarkModeToggle from './DarkModeToggle'
+import DarkModeToggle from './Games/DarkModeToggle'
 
 const Navbar = () => {
   return (

@@ -1,7 +1,7 @@
 import { Game } from '@/hooks/useGames'
 import React from 'react'
 import GamePlatform from './GamePlatform'
-import { Badge } from './ui/badge'
+import { Badge } from '../ui/badge'
 import CriticScore from './CriticScore'
 
 interface Props {

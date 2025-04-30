@@ -1,4 +1,4 @@
-import GameGrid from "./GameGrid"
+import GameGrid from "./Games/GameGrid"
 
 const Home = () => {
   return (
