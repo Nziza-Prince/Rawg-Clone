@@ -15,7 +15,7 @@ const GameCard = ({ game }: Props) => {
         className="w-full h-64 object-cover"
       />
       <div className="p-4">
-        <p className="text-lg font-semibold text-gray-800 dark:text-white truncate">
+        <p className="text-2xl my-5 font-semibold text-gray-800 dark:text-white truncate">
           {game.name}
         </p>
      <GamePlatform game={game}/>
