@@ -1,5 +1,6 @@
 import useGames from '@/hooks/useGames'
 import React from 'react'
+import GameCard from './GameCard'
 
 const GameGrid = () => {
   const {data:games,error} = useGames()
@@ -9,9 +10,7 @@ const GameGrid = () => {
   return (
 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
   {games?.map(game => (
-    <div key={game.id} className="bg-white dark:bg-gray-800 p-4 rounded shadow">
-      <p className="text-lg font-semibold">{game.name}</p>
-    </div>
+  <GameCard key={game.id} game={game}/>
   ))}
 </div>
 

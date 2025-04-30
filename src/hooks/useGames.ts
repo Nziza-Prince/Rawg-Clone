@@ -1,9 +1,10 @@
 import apiClient from "@/services/ApiClient";
 import { useQuery } from '@tanstack/react-query';
 
-interface Game {
+export interface Game {
     id: number
     name: string
+    background_image:string
 }
 
 interface FetchGameResponse {
@@ -14,7 +15,7 @@ interface FetchGameResponse {
 const fetchGames = async ():Promise<Game[]> => {
 
     const res = await apiClient.get<FetchGameResponse>('games')
-    console.log(res.data.results)
+    // console.log(res.data.results)
     return res.data.results
 
 }
