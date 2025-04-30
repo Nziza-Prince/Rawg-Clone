@@ -1,3 +1,5 @@
+import GameGrid from "./GameGrid"
+
 const Home = () => {
   return (
     <div className="flex min-h-screen bg-white dark:bg-gray-900 text-black dark:text-white transition-colors duration-300">
@@ -17,7 +19,7 @@ const Home = () => {
           <h1 className="text-3xl font-semibold">Main Content</h1>
 
         </div>
-        <p>This is the main section of the page.</p>
+        <GameGrid/>
       </main>
     </div>
   )

@@ -1,5 +1,5 @@
 import { useThemeStore } from '@/store/ThemeStore'
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { FaMoon } from "react-icons/fa6";
 import { FaSun } from "react-icons/fa";
 
