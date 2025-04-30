@@ -15,16 +15,15 @@ export interface Game {
     metacritic:number
 }
 
-interface FetchGameResponse {
+export interface FetchGameResponse {
     count: number,
     results: Game[]
-
 }
 
 const fetchGames = async ():Promise<Game[]> => {
 
     const res = await apiClient.get<FetchGameResponse>('games')
-    console.log(res.data.results)
+    // console.log(res.data.results)
     return res.data.results
 
 }
