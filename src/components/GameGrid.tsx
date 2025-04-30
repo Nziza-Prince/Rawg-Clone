@@ -1,5 +1,4 @@
 import useGames from '@/hooks/useGames'
-import React from 'react'
 import GameCard from './GameCard'
 import LoadingSkeletons from './LoadingSkeleton'
 

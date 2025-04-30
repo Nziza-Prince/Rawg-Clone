@@ -1,6 +1,8 @@
 import { Game } from '@/hooks/useGames'
 import React from 'react'
 import GamePlatform from './GamePlatform'
+import { Badge } from './ui/badge'
+import CriticScore from './CriticScore'
 
 interface Props {
   game: Game
@@ -18,7 +20,10 @@ const GameCard = ({ game }: Props) => {
         <p className="text-2xl my-5 font-semibold text-gray-800 dark:text-white truncate">
           {game.name}
         </p>
-     <GamePlatform game={game}/>
+     <div className='flex justify-between'>
+         <GamePlatform game={game}/>
+         <CriticScore score={game.metacritic}/>
+     </div>
       </div>
     </div>
   )

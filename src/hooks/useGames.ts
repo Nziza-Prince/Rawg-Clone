@@ -12,6 +12,7 @@ export interface Game {
     name: string
     background_image:string
     parent_platforms:{platform:Platform}[]
+    metacritic:number
 }
 
 interface FetchGameResponse {
@@ -23,7 +24,7 @@ interface FetchGameResponse {
 const fetchGames = async ():Promise<Game[]> => {
 
     const res = await apiClient.get<FetchGameResponse>('games')
-    // console.log(res.data.results)
+    console.log(res.data.results)
     return res.data.results
 
 }
